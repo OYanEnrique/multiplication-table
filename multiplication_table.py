@@ -1,7 +1,14 @@
-#Multiplication Table
+# Multiplication Table v1.1.0
+print('=-' * 15)
+print('Infinite Multiplication Table')
+print('=-' * 15)
 
-user_number=int(input('Enter a number to do the multiplication table:'))
-
-for multiplication_number in range (0, 11):
-	multiplication_table = user_number * multiplication_number
-	print(f'{user_number} x {multiplication_number} = {multiplication_table}')
+while True:
+	number = int(input('Enter a non negative number:'))
+	print('=' * 30)
+	if number <0:
+		print('Program closed successfully')
+		break
+	for y in range(1,11):
+		print(f'{number} x {y} = {number*y}')
+	print('='*30)
